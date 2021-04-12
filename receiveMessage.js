@@ -7,8 +7,8 @@ const freeclimbSDK = require('@freeclimb/sdk')
 
 const port = process.env.PORT || 80
 const accountId = process.env.ACCOUNT_ID
-const authToken = process.env.AUTH_TOKEN
-const freeclimb = freeclimbSDK(accountId, authToken)
+const apiKey = process.env.API_KEY
+const freeclimb = freeclimbSDK(accountId, apiKey)
 
 app.post('/incomingSms', (req, res) => {
   let to = 'example to number'
